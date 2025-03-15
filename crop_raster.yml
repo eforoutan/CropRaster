@@ -1,0 +1,7 @@
+input_raster:
+  class: File
+  path: raster/DEM_Oklahoma.tif
+
+input_shapefile:
+  class: Directory
+  path: shapefile

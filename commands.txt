@@ -1,0 +1,10 @@
+python .\crop_raster.py "C:/CWL/spatial/CropRaster/raster/DEM_Oklahoma.tif" "C:/CWL/spatial/CropRaster/shapefile"
+
+docker build -t eforoutan/crop_raster:latest .
+
+
+docker push eforoutan/crop_raster:latest
+
+
+
+cwltool crop_raster.cwl crop_raster.yml
