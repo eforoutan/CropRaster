@@ -15,7 +15,9 @@ inputs:
       position: 1
   
   input_shapefile:
-    type: Directory
+    type:
+      - File
+      - Directory
     inputBinding:
       position: 2
  
